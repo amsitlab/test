@@ -16,13 +16,13 @@ android {
       versionName "0.100"
 
    }
-}
+   buildTypes {
+      release {
+          minifyEnabled true
+          shrinkResources false // Reproducible builds
+          proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      }
 
-buildTypes {
-   release {
-       minifyEnabled true
-       shrinkResources false // Reproducible builds
-       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
    }
-
 }
+
