@@ -5,6 +5,8 @@ plugins {
 android {
    //compileSdkVersion project.properties.compileSdkVersion.toInteger()
    compileSdkVersion 30
+
+/*
    dependencies {
 
    }
@@ -31,7 +33,7 @@ android {
       sourceCompatibility JavaVersion.VERSION_1_8
       targetCompatibility JavaVersion.VERSION_1_8
     }
-
+*/
 }
 
 task versionName {
