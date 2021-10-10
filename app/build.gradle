@@ -5,6 +5,9 @@ plugins {
 android {
    //compileSdkVersion project.properties.compileSdkVersion.toInteger()
    compileSdkVersion 30
+   dependencies {
+
+   }
 
    defautConfig {
       applicationId "amsitlab.android.apps.test"
