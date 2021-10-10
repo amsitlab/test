@@ -21,7 +21,7 @@ jobs:
       - name: Gradle build
         uses: gradle/gradle-build-action@v2
         with:
-          gradle-version: 6.5
+          gradle-version: 6.7.1
           arguments: build
       - name: Build APK
         run: bash ./gradlew assembleDebug --stacktrace
