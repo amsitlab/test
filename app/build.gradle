@@ -6,12 +6,12 @@ android {
    //compileSdkVersion project.properties.compileSdkVersion.toInteger()
    compileSdkVersion 30
 
-/*
+
    dependencies {
 
    }
 
-   defautConfig {
+   defaultConfig {
       applicationId "amsitlab.android.apps.test"
       //minSdkVersion project.properties.minSdkVersion.toInteger()
       //targetSdkVersion project.properties.targetSdkVersion.toInteger()
@@ -33,7 +33,7 @@ android {
       sourceCompatibility JavaVersion.VERSION_1_8
       targetCompatibility JavaVersion.VERSION_1_8
     }
-*/
+
 }
 
 task versionName {
