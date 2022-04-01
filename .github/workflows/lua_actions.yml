@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Setup Lua
-        uses: xpol/setup-lua@v0.2
+        uses: xpol/setup-lua@v0.3
         with:
           lua-version: ${{ matrix.luaVersion }}
       - name: Setup Luarocks
