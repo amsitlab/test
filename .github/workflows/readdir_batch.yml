@@ -17,5 +17,5 @@ jobs:
           setlocal EnableDelayedExpansion
           setlocal EnableExtensions
           for /f "delims=" %%i in ('dir /w') do set output=%%i
-          !echo! output
+          echo | set /p ^=!output!
         shell: cmd
