@@ -22,8 +22,10 @@ jobs:
           lua-version: ${{ matrix.luaVersion }}
       - name: Setup Luarocks
         run: choco install luarocks
-      - name: Install package(s)
+      - name: test
         run: |
-          luarocks install winapi
+          lua -e 'print(package.config)'
+          lua -e 'print(package.path)'
+          lua -e 'print(package.cpath)'
 
 
