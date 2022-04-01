@@ -22,7 +22,7 @@ jobs:
           lua-version: ${{ matrix.luaVersion }}
       - name: test
         run: |
-          lua .\.github\workflows\detect.lua
+          lua .\\.github\\workflows\\detect.lua
       - name: test pwsh
         run: |
           Get-ChildItem -Path .github\\workflows\\* -Include *.yml
