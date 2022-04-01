@@ -1,5 +1,6 @@
 jobs:
   test:
+    runs-on: windows-2019
     strategy:
       matrix:
         luaVersion: ["5.1.5", "5.2.4", "luajit-2.1.0-beta3"]
