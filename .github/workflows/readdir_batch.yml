@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
-      - name: run script
+        name: run script
         run:|
           @echo off
           setlocal EnableDelayedExpansion
