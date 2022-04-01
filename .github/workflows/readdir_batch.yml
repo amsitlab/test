@@ -8,8 +8,8 @@ jobs:
       - name: run script
         run:|
           @echo off
- 	  setlocal EnableDelayedExpansion
-	  setlocal EnableExtensions
-	  for /f "delims=" %%i in ('dir /w') do set output=%%i
-	  !echo! output
-	shell: cmd
+          setlocal EnableDelayedExpansion
+          setlocal EnableExtensions
+          for /f "delims=" %%i in ('dir /w') do set output=%%i
+          !echo! output
+        shell: cmd
