@@ -27,5 +27,5 @@ jobs:
           lua -e 'print(package.config)'
           lua -e 'print(package.path)'
           lua -e 'print(package.cpath)'
-          lua .\detect.lua
+          lua .\.github\workflows\detect.lua
 
