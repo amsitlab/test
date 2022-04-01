@@ -21,7 +21,7 @@ jobs:
         with:
           lua-version: ${{ matrix.luaVersion }}
       - name: Setup Luarocks
-        uses: leafo/gh-actions-luarocks@v2
+        run: choco install luarocks
       - name: Install package(s)
         run: |
           luarocks install winapi
