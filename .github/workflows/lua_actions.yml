@@ -20,3 +20,10 @@ jobs:
         uses: xpol/setup-lua@v0.2
         with:
           lua-version: ${{ matrix.luaVersion }}
+      - name: Setup Luarocks
+        uses: leafo/gh-actions-luarocks@v2
+      - name: Install package(s)
+        run: |
+          luarocks install winapi
+
+
