@@ -1,0 +1,29 @@
+name: Test Lua Actions.
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+
+jobs:
+  test:
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        luaVersion: ["5.1.5"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Lua
+        uses: xpol/setup-lua@v0.3
+        with:
+          lua-version: ${{ matrix.luaVersion }}
+      - name: test
+        run: |
+          lua .\.github\workflows\detect.lua
+      - name: test pwsh
+        run: |
+          Get-ChildItem -Path .github\\workflows\\* -Include *.yml
+        shell: pwsh
