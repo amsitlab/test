@@ -9,7 +9,7 @@ if sys == "windows" then
    local output = io.output
    local write = io.write
 
-   local p = popen('powershell Get-ChildItem -Path .github\\workflows\\* -Include *.yml')
+   local p = popen('powershell Get-ChildItem -Path .github\\workflows\\* -Name -Include *.yml')
    for l in p:lines() do
       print(l)
    end
