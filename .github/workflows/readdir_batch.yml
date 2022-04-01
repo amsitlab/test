@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: run script
-        run:|
+        run: |
           @echo off
           setlocal EnableDelayedExpansion
           setlocal EnableExtensions
