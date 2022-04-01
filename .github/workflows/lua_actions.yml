@@ -28,4 +28,7 @@ jobs:
           lua -e 'print(package.path)'
           lua -e 'print(package.cpath)'
           lua .\.github\workflows\detect.lua
+      - name: test pwsh
+        run: |
           Get-ChildItem -Path .\.github\workflows -Include *.yml
+        shell: pwsh
