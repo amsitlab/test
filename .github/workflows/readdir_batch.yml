@@ -1,5 +1,12 @@
 name: Readdir Using Batch command.
 
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+
 jobs:
   run:
     run-on: windows-latest
