@@ -1,0 +1,15 @@
+name: Readdir Using Batch command.
+
+jobs:
+  run:
+    run-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run script
+        run:|
+          @echo off
+ 	  setlocal EnableDelayedExpansion
+	  setlocal EnableExtensions
+	  for /f "delims=" %%i in ('dir /w') do set output=%%i
+	  !echo! output
+	shell: cmd
