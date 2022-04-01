@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-2019
     strategy:
       matrix:
-        luaVersion: ["luajit-2.1.0-beta3"]
+        luaVersion: ["5.1.5"]
 
     steps:
       - name: Checkout
