@@ -1,5 +1,4 @@
-name: Winpy.
-
+name: Test Lua Actions.
 on:
   push:
     branches:
@@ -8,12 +7,19 @@ on:
       - 'v*'
 
 jobs:
-  build:
+  test:
     runs-on: windows-2019
+    strategy:
+      matrix:
+        luaVersion: ["3.9", "3.10"]
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup python
-        uses: actions/setup-python#v3
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Lua
+        uses: actions/setup-python@v3
         with:
-          python-version: '3.x'
-      - run: python win.py
+          python-version: ${{ matrix.luaVersion }}
+      - name: test
+        run: |
+          python .\\.github\\workflows\\win.py
