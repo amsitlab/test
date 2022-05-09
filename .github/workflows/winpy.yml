@@ -1,3 +1,13 @@
+
+name: Winpy.
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+
+
 jobs:
   build:
     runs-on: windows-latest
