@@ -8,8 +8,8 @@ on:
     workflow_dispatch:
         inputs:
             message:
-                description: "The message to be stored"
-                default: "foo"
+                description: 'The message to be stored'
+                default: 'foo'
 
 jobs:
     test:
