@@ -6,10 +6,17 @@ on:
         branches:
             - main
     workflow_dispatch:
-        
+
+inputs:
+    message:
+        description: "The message to be stored"
+        default: "foo"        
 jobs:
     test:
         runs-on: codeberg-medium-lazy
         steps:
             - name: "test"
-              run: sh echo "foo";
+              shell: bash
+              run: echo "$MESSAGE";
+              env:
+                MESSAGE: ${{ inputs.message }}
