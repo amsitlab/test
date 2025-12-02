@@ -7,3 +7,9 @@ on:
             - main
     workflow_dispatch:
         
+jobs:
+    test:
+        runs-on: codeberg-medium-lazy
+        steps:
+            - name: "test"
+              run: bash echo "foo";
