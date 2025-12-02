@@ -12,4 +12,4 @@ jobs:
         runs-on: codeberg-medium-lazy
         steps:
             - name: "test"
-              run: bash echo "foo";
+              run: sh echo "foo";
