@@ -10,6 +10,7 @@ on:
             message:
                 description: 'The message to be stored'
                 default: 'foo'
+                type: 'string'
 
 jobs:
     test:
